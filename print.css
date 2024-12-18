@@ -1,0 +1,28 @@
+@media print {
+  @page {
+    margin: 0;
+    size: 70mm auto;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+  
+  #printable-invoice,
+  #printable-invoice * {
+    visibility: visible;
+  }
+
+  #printable-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70mm;
+    padding: 5mm;
+    font-size: 10pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
